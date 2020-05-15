@@ -1,0 +1,274 @@
+/**
+ *
+ * You can write your CSS code here, DO NOT touch the default JavaScript file
+ * because it will make it harder for you to update.
+ * 
+ */
+
+/*# sourceMappingURL=custom.css.map */
+
+.m-b-20 {
+    margin-bottom: 20px;
+}
+
+.m-b-40 {
+    margin-bottom: 40px;
+}
+
+.section-title-search-box {
+    position: relative;
+    margin: 30px 0 25px 0;
+}
+
+.card-header-description
+{
+    padding: 22px 25px 0px 20px !important;
+    display: inline !important;
+}
+
+.modal-designed-header {
+    background-color: #f7f9f9 !important;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dadada;
+}
+
+.footer-border
+{
+    border-top: 1px solid #f9f9f9 !important;
+}
+
+.help-block {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+/* Form page css*/
+.orText {
+    font-size: 14px;
+    padding: 10px 15px;
+    height: 42px;
+}
+.card-height {
+    min-height: 200px;
+}
+
+.list-unstyled-border li {
+    margin-bottom: 0px !important;
+}
+
+/* Import Lead Page */
+.leadBox {
+    min-height:320px;
+    width:250px;
+    margin: 10px;
+}
+
+.leadOptions {
+    padding: 10px;
+    height: 150px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.unchanged
+{
+    border: 2px solid #d0d0d0;
+}
+
+.matched
+{
+    border: 2px solid #52bad5;
+}
+
+.unmatched
+{
+    border: 2px solid #EE836E;
+}
+
+.leadSamples {
+    width: 100%;
+}
+
+.sampleHeading {
+    color: white;
+}
+
+.leadSamples .sampleHeading, .leadSamples .sample {
+    padding: 5px 15px;
+    margin: 0px;
+}
+
+.unchanged .sampleHeading {
+    background-color: #e0e0e0;
+}
+
+.unchanged .sample {
+    background-color: #ffffff;
+}
+
+.matched .sampleHeading {
+    background-color: #52BAD5;
+}
+
+.matched .sample {
+    background-color: #B1E0EC;
+}
+
+.unmatched .sampleHeading {
+    background-color: #EE836E;
+}
+
+.unmatched .sample {
+    background-color: #FBE3E4;
+}
+
+.leadBox .unmatchedWarning {
+    color: #EE836E;
+}
+
+.leadBox .notimported {
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+
+.sampleHeading, .sample {
+    overflow-x: hidden;
+}
+
+/* Role Page */
+.table-role td {
+    height: 50px !important;
+}
+
+/* Locale Page */
+a.status-1{
+    font-weight: bold;
+}
+
+.glyphicon-ok:before {
+    content: "\f00c";
+}
+.glyphicon-remove:before {
+    content: "\f00d";
+}
+.glyphicon {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Start Lead Page */
+.timer-clock {
+    color: black;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.pt-5
+{
+    padding-top: 5px;
+}
+
+.pt-7
+{
+    padding-top: 7px;
+}
+
+.pt-15
+{
+    padding-top: 15px;
+}
+
+.pull-right {
+    float: right;
+}
+
+.ml-2 {
+  margin-left: 2px;
+}
+
+.mb-10
+{
+    margin-bottom: 10px;
+}
+
+.hide {
+    display: none!important;
+}
+
+/* Custom Tab */
+.custom-tab li a.nav-link {
+    border: 0px;
+    padding: 15px 20px;
+    color: #212529;
+}
+.custom-tab li a.nav-link.active {
+    border-bottom: 2px solid #fb9678;
+    color: #fb9678;
+}
+.custom-tab li a.nav-link:hover {
+    color: #fb9678;
+}
+
+.custom-tab .nav-item.show .nav-link, .custom-tab .nav-link.active {
+    background-color: transparent;
+}
+
+.sidebar-badge {
+    text-align: center !important;
+    padding-left: 8px !important;
+    padding-top: 3px !important;
+    padding-bottom: 3px !important;
+    padding-right: 10px !important;
+}
+
+.btn-outline-white:hover, .btn-outline-white:active, .btn-outline-white:focus{
+    color: black !important;
+}
+
+.table-head {
+    background: #f7f9f9;
+}
+
+.table-bottom-border {
+    border-bottom: 1px solid #dee2e6
+}
+
+/* Dialer */
+#liveCallWidget {
+    position: fixed;
+    bottom: 65px;
+    right: 30px;
+    padding: 20px 65px;
+    background: #545454;
+    border-radius: 10px;
+}
+
+.round-btn {
+    border-radius: 19px;
+}
+
+.live-call-status-text {
+    color: white;
+}
+
+.live-call-widget-close {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.live-call-widget-signal {
+    position: absolute;
+    left: 15px;
+    top: 8px;
+    color: white;
+    cursor: pointer;
+}

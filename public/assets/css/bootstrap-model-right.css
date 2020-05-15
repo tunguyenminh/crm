@@ -1,0 +1,144 @@
+.modal-open .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    overflow: hidden;
+    outline: 0;
+}
+
+.fade {
+    -webkit-transition: opacity .15s linear;
+    transition: opacity .15s linear;
+}
+
+.modal.show .modal-right {
+    -webkit-transform: translate(0,0)!important;
+    transform: translate(0,0)!important;
+}
+
+.modal-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+
+.modal-right {
+    min-width: 400px;
+    width: 400px;
+}
+@media (max-width: 576px){
+    .modal-right {
+        min-width: calc(100vw - 40px);
+        width: calc(100vw - 40px);
+    }
+}
+
+.modal-right {
+    position: absolute;
+    right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    /* flex-flow: column nowrap; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    background-color: #fff;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-transform: translate(25%,0)!important;
+    transform: translate(25%,0)!important;
+}
+
+.modal-content {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0 solid transparent;
+    border-radius: .2rem;
+    outline: 0;
+    height: auto;
+    min-height: 100%;
+    border-radius: 0;
+}
+
+.modal-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #e9ecef;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+
+.modal-body{
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1rem;
+}
+
+#addEditModal .modal-dialog {
+    /*width: 100%; Uncomment it if you want overflow scroll x*/
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.help-block {
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}
+
+.has-error .select2 .select2-selection{
+    border-color: red !important;
+}
+
+.modal-designed-header {
+    background-color: #f7f9f9 !important;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dadada;
+}

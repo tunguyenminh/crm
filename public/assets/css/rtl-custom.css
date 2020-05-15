@@ -1,0 +1,40 @@
+body {
+    text-align: right !important;
+}
+
+.card-body ul {
+    padding-inline-start: 0px;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+    text-align: left;
+}
+
+.pull-right {
+    float: left !important;
+}
+
+.float-right {
+    float: left !important;
+}
+
+.mr-3, .mx-3 {
+    margin-left: 1rem !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__arrow, .select2-container--default .select2-selection--single .select2-selection__arrow {
+    position: absolute;
+    top: 1px;
+    left: 1px !important;
+    width: 40px;
+    min-height: 42px;
+}
+
+.main-sidebar .sidebar-menu li a {
+    padding: 0 15px;
+}
+
+#liveCallWidget {
+    right: unset;
+    left: 30px;
+}

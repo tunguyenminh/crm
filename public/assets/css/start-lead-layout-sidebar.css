@@ -1,0 +1,28 @@
+.footer-bar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: white !important;
+    border-top: 2px solid #d0d0d0 !important;
+    color: white;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .footer-bar {
+        width: calc(100% - 235px);
+        margin-left: 235px;
+    }
+
+    .sidebar-mini .footer-bar {
+        width: calc(100% - 45px);
+        margin-left: 45px;
+    }
+}
+
+/* Callback index page */
+.alert:not(.alert-light) a:hover, .alert:not(.alert-light) a:active, .alert:not(.alert-light) a:focus {
+    color: #6777ef !important;
+}
