@@ -17,3 +17,5 @@ yarn-error.log
 !/public/assets/uploads/users/default.png
 !/public/assets/uploads/companies/default.png
 .DS_Store
+/storage/framework/sessions
+*/.gitkeep

@@ -199,7 +199,7 @@
     }
     @endif
 
-    @if($user->ability('admin', 'campaign_view_all') || $campaignDetails->created_by == $user->id)
+    @if($user->ability('admin', 'campaign_view_all'))
     function addLeadModal (id) {
         var url = "{{ route('admin.campaigns.lead.create', [':id']) }}";
         url = url.replace(':id', id);

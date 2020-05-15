@@ -41,6 +41,18 @@ class User extends Authenticatable
         return trim($name);
     }
 
+    public function getShortNameAttribute()
+    {
+        $name = ucfirst($this->first_name[0]);
+
+        if($this->last_name && $this->last_name != '')
+        {
+            $name .= ucfirst($this->last_name[0]);
+        }
+
+        return trim($name);
+    }
+
     public function getImageUrlAttribute()
     {
         $userImagePath = Common::getFolderPath('userImagePath');

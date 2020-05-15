@@ -13,6 +13,9 @@
 <script src="{{ asset('assets/modules/sweetalert/sweetalert.min.js') }}"></script>
 
 @if($settings->twilio_enabled)
+<script>
+    var twilioTokenUrl = "{{ route('front.twilio.token') }}";
+</script>
 <script src="{{ asset('assets/js/twilio/dist/twilio.min.js') }}"></script>
 <script src="{{ asset('assets/js/twilio/browser-calls.js') }}"></script>
 @endif

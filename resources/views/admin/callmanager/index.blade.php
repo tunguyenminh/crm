@@ -65,11 +65,7 @@
                             <div class="col-md-4">@lang('module_campaign.members')</div>
                             <div class="col-md-8">
                                 @foreach($userCampaign->staffMembers as $staffMember)
-                                    @if($staffMember->user->last_name)
-                                        @php($shortName = ucfirst($staffMember->user->first_name[0]))
-                                    @else
-                                        @php($shortName = ucfirst($staffMember->user->first_name[0]).ucfirst($staffMember->user->last_name[0]))
-                                    @endif
+                                    @php($shortName = $staffMember->user->short_name)
                                     <figure class="avatar mr-2 mb-2 avatar-sm bg-success text-white" data-initial="{{ $shortName }}" data-toggle="tooltip" title="{{ $staffMember->user->name }}"></figure>
                                 @endforeach
                             </div>
