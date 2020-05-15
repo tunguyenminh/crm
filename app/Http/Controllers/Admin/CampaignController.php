@@ -101,7 +101,13 @@ class CampaignController extends AdminBaseController
                                                 {
                                                     if($staffMember->user->image == null)
                                                     {
-                                                        $shortName = ucfirst($staffMember->user->first_name[0]).ucfirst($staffMember->user->last_name[0]);
+                                                        $shortName = '';
+                                                        if (!empty($staffMember->user->first_name)) {
+                                                            $shortName .= ucfirst($staffMember->user->first_name[0]);
+                                                        }
+                                                        if (!empty($staffMember->user->last_name)) {
+                                                            $shortName .= ucfirst($staffMember->user->last_name[0]);
+                                                        }
                                                         $string .= '<figure class="avatar mr-2 mb-2 avatar-sm '.$randomColorArray[array_rand($randomColorArray)].' text-white" data-initial="'.$shortName.'" data-toggle="tooltip" title="'.$staffMember->user->name.'"></figure>';
                                                     } else {
                                                         $string .= '<img alt="image" src="'.$staffMember->user->image_url.'" class="rounded-circle" width="35" data-toggle="tooltip" title="'.$staffMember->user->name.'">';
