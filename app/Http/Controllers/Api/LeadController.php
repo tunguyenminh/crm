@@ -10,9 +10,9 @@ use Illuminate\Http\Request;
 
 class LeadController extends Controller
 {
-    public function saveLeadData(Request $request, $id)
+    public function saveLeadData(Request $request)
     {
-        $lead = Lead::whereRaw('id', $id)->first();
+        $lead = Lead::whereRaw('id', $request->id)->first();
         $campaign = $lead->campaign;
 
         // Saving Lead related data
