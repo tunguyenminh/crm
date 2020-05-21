@@ -30,6 +30,7 @@ class LeadController extends Controller
 
         foreach ($request->fields as $lineArrayResultKey => $lineArrayResult)
         {
+            if ($lineArrayResultKey == 0) continue;
             $newLeadDataArray[$lineArrayResultKey] = [
                 'field_name' => $formFields[$lineArrayResultKey],
                 'field_value' => $lineArrayResult
