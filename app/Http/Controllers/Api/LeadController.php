@@ -18,11 +18,6 @@ class LeadController extends Controller
         $campaign = Campaign::whereRaw('id', $request->id)->first();
         $formFields = FormField::where('form_id', $campaign->form_id)->orderBy('order', 'asc')->pluck('field_name', 'id');
 
-        // Only admin and user having to permission to view all campaign can create a new lead
-        if(!($this->user->ability('admin', 'campaign_view_all') || ($this->campaignDetails->created_by == $this->user->id && $this->user->can('campaign_view')))) {
-            return Reply::error('messages.notAllowed');
-        }
-
         // Creating array from csv/txt data
         $newLeadDataArray = [];
         foreach ($formFields as $formFieldKey => $formFieldValue)
