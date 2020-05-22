@@ -28,7 +28,7 @@ class LeadController extends Controller
             ];
         }
 
-        foreach ($request->fields as $lineArrayResultKey => $lineArrayResult)
+        foreach ($request->field as $lineArrayResultKey => $lineArrayResult)
         {
             if ($lineArrayResultKey == 0) continue;
             $newLeadDataArray[$lineArrayResultKey] = [
